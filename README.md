@@ -2,7 +2,7 @@
 
 [![npm-version](https://img.shields.io/npm/v/hmpl-loader?logo=npm&color=fff)](https://www.npmjs.com/package/hmpl-loader)
 
-This loader was created for files with the `.hmpl` extension, which are converted using the [hmpl-js](https://github.com/hmpljs/hmpl) package. This loader is designed for webpack.
+This loader was created for files with the `.hmpl` extension, which are converted using the [hmpl-js](https://www.npmjs.com/package/hmpl-js) package. This loader is designed for webpack.
 
 > Loader works with hmpl-js version 1.0.4 or higher
 
@@ -29,7 +29,7 @@ module.exports = {
 };
 ```
 
-After `webpack.config.js` has been changed, in js files (for example, in `main.js`), you can import a file with the `.hmpl` extension and receive a [template function](https://hmpljs.github.io/#/?id=compile) in response.
+After `webpack.config.js` has been changed, in js files (for example, in `main.js`), you can import a file with the `.hmpl` extension and receive a [template function](https://hmpl-lang.dev/hmpl.html#compile) in response.
 
 ### main.hmpl
 
@@ -76,12 +76,12 @@ module.exports = {
 };
 ```
 
-The list of options is described in the documentation [here](https://hmpl-lang.github.io/hmpl.html#options).
+The list of options is described in the documentation [here](https://hmpl-lang.dev/hmpl.html#options).
 
 ## Changelog
 
-[Changelog](https://github.com/hmpljs/hmpl-loader/releases)
+[Changelog](https://github.com/hmpl-language/hmpl-loader/releases)
 
 ## License
 
-[Licensed under MIT](https://github.com/hmpljs/hmpl-loader/blob/master/LICENSE)
+[Licensed under MIT](https://github.com/hmpl-language/hmpl-loader/blob/master/LICENSE)
