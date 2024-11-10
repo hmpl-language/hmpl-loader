@@ -1,6 +1,6 @@
 {
   "name": "hmpl-loader",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "hmpl loader for webpack",
   "main": "index.js",
   "scripts": {},
@@ -11,12 +11,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/hmpljs/hmpl-loader"
+    "url": "https://github.com/hmpl-language/hmpl-loader"
   },
   "bugs": {
-    "url": "https://github.com/hmpljs/hmpl-loader/issues"
+    "url": "https://github.com/hmpl-language/hmpl-loader/issues"
   },
-  "homepage": "https://hmpljs.github.io",
+  "homepage": "https://hmpl-lang.dev/webpack.html",
   "keywords": [
     "hmpl",
     "hmpl-js",
