@@ -9,7 +9,7 @@ This loader was created for files with the `.hmpl` extension, which are converte
 ## Installation
 
 ```bash
-npm i hmpl-loader
+npm i -D hmpl-loader
 ```
 
 ## Usage:
