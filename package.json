@@ -1,7 +1,7 @@
 {
   "name": "hmpl-loader",
   "version": "0.0.5",
-  "description": "hmpl loader for webpack",
+  "description": "Loader for files with hpml extension for webpack",
   "main": "index.js",
   "scripts": {},
   "files": [
