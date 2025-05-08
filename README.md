@@ -29,17 +29,14 @@ module.exports = {
 };
 ```
 
-After `webpack.config.js` has been changed, in js files (for example, in `main.js`), you can import a file with the `.hmpl` extension and receive a [template function](https://hmpl-lang.dev/hmpl.html#compile) in response.
+After `webpack.config.js` has been changed, in js files (for example, in `main.js`), you can import a file with the `.hmpl` extension and receive a [template function](https://spec.hmpl-lang.dev/#template-function) in response.
 
 ### main.hmpl
 
 ```hmpl
 <div>
-  {
-    {
-      "src":"/api/test"
-    }
-  }
+  {{#request src="/api/test"}}
+  {{/request}}
 </div>
 ```
 
@@ -76,7 +73,7 @@ module.exports = {
 };
 ```
 
-The list of options is described in the documentation [here](https://hmpl-lang.dev/hmpl.html#options).
+The list of options is described in the documentation [here](https://spec.hmpl-lang.dev/#options).
 
 ## Changelog
 
