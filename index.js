@@ -16,11 +16,35 @@ const schema = {
               type: "boolean",
             },
           },
+          additionalProperties: false,
         },
         { type: "boolean" },
       ],
     },
+    allowedContentTypes: {
+      anyOf: [
+        {
+          type: "array",
+          items: {
+            type: "string",
+          },
+        },
+        {
+          enum: ["*"],
+        },
+      ],
+    },
+    sanitize: {
+      type: "boolean",
+    },
+    disallowedTags: {
+      type: "array",
+      items: {
+        enum: ["script", "style", "iframe"],
+      },
+    },
   },
+  additionalProperties: false,
 };
 
 module.exports = function (source) {
