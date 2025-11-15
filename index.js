@@ -7,43 +7,52 @@ const schema = {
     memo: {
       type: "boolean",
     },
+
     autoBody: {
       anyOf: [
         {
+          type: "boolean",
+        },
+        {
           type: "object",
           properties: {
-            formData: {
-              type: "boolean",
-            },
+            formData: { type: "boolean" },
           },
           additionalProperties: false,
         },
-        { type: "boolean" },
       ],
     },
+
     allowedContentTypes: {
       anyOf: [
         {
           type: "array",
-          items: {
-            type: "string",
-          },
+          items: { type: "string" },
         },
         {
+          type: "string",
           enum: ["*"],
         },
       ],
     },
+
     sanitize: {
       type: "boolean",
     },
+
     disallowedTags: {
       type: "array",
       items: {
         enum: ["script", "style", "iframe"],
       },
     },
+
+    sanitizeConfig: {
+      type: "object",
+      additionalProperties: true,
+    },
   },
+
   additionalProperties: false,
 };
 
